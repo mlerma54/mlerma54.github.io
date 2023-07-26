@@ -1,0 +1,523 @@
+% To be compiled with LaTeX
+% Set ``showsol'' to true to show the solutions.
+
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\parskip 10pt
+\usepackage{amsfonts}
+%\usepackage{latexsym}
+%\usepackage{graphpap}
+\usepackage{epsfig}
+
+\usepackage{ifthen}
+
+\newboolean{showsol}
+
+%\setboolean{showsol}{false}
+\setboolean{showsol}{true}
+
+\newcommand{\ts}{Midterm Exam No.\,2} % Which test is this one?
+
+
+\newcommand{\solution}[2]{\ifthenelse{\boolean{showsol}}%
+{\vskip10pt\noindent\emph{Solution:}\vskip10pt #2}{\vskip #1}}
+
+\newcommand{\pnum}[1]{\noindent {\hskip -18pt \bfseries #1.}}
+
+\makeatletter
+\def\ps@myhead{%
+    \let\@oddfoot\@empty\let\@evenfoot\@empty
+    \def\@evenhead{\hfil{\large\leftmark}\hfil}%
+    \def\@oddhead{\hfil{\large\rightmark}\hfil}%
+    \let\@mkboth\@gobbletwo
+    \let\sectionmark\@gobble
+    \let\subsectionmark\@gobble
+    \def\@oddfoot{\reset@font\hfil\thepage\hfil}
+    \let\@evenfoot\@oddfoot
+    }
+\makeatother
+
+
+\begin{document}
+%\setlength{\unitlength}{1mm}
+\thispagestyle{myhead}
+
+\ifthenelse{\boolean{showsol}}
+{
+\markright{\bfseries Math B17 
+- Winter 1999 - \ts{} (solutions)}
+}
+{
+\markright{\bfseries B17 
+- Winter 1999 - \ts{} }
+}
+
+
+
+%begin header
+\ifthenelse{\boolean{showsol}}
+{
+\centerline{\Large SOLUTIONS}
+}
+{
+\noindent \begin{minipage}[t]{3.5 in}
+\Large
+\begin{tabular}{|r|c|}\hline 
+{\bfseries  Last Name:}&{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\\ 
+\hline 
+{\bfseries First Name:}&{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\\ 
+\hline
+\end{tabular}
+\end{minipage}
+
+\bigskip
+
+%{\noindent \bfseries Show all your work. 
+%
+%\noindent No calculators allowed.}
+}%end header
+%
+\bigskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pnum{1} Let $A$, $B$ and $C$ be the following matrices:
+\[
+A =
+\left [\begin {array}{rr} 1&4\\\noalign{\medskip}3&6\end {array}
+\right ]
+\qquad
+B =
+\left [\begin {array}{rr} 1&-3\\\noalign{\medskip}1&5\end {array}
+\right ]
+\qquad
+C =
+\left [\begin {array}{rr} -2&5\\\noalign{\medskip}1&-2\end {array}
+\right ]
+\]
+Compute $(3A+B)\,C$.
+
+
+\solution{2.5in}{\par
+\[
+\begin{aligned}
+(3A + B ) \, C &=
+\left(
+\left [\begin {array}{rr} 3&12\\\noalign{\medskip}9&18\end {array}
+\right ]
++
+\left [\begin {array}{rr} 1&-3\\\noalign{\medskip}1&5\end {array}
+\right ]
+\right)
+\left [\begin {array}{rr} -2&5\\\noalign{\medskip}1&-2\end {array}
+\right ]
+\\ \noalign{\medskip}
+&=
+\left [\begin {array}{rr} 4&9\\\noalign{\medskip}10&23\end {array}
+\right ]
+\left [\begin {array}{rr} -2&5\\\noalign{\medskip}1&-2\end {array}
+\right ]
+\\ \noalign{\medskip}
+&=
+\left [\begin {array}{rr} 1&2\\\noalign{\medskip}3&4\end {array}
+\right ]
+\end{aligned}
+\]
+
+}
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\pnum{2} 
+Is the vector 
+$\displaystyle{
+\mathbf{b} = 
+\left [\begin {array}{r} 2\\\noalign{\medskip}1\end {array}\right ]
+}$
+in the column space of the matrix
+$\displaystyle{
+A =
+\left [\begin {array}{ccc} 1&3&5\\\noalign{\medskip}1&3&2\end {array}
+\right ] ?
+}$
+
+\solution{2.5in}{\par 
+The vector $\mathbf{b}$ is in the column space of $A$ iff the 
+system $A\,\mathbf{v} = \mathbf{b}$ has a solution. The augmented 
+matrix is:
+\[
+A' = 
+\left [\begin {array}{rrr} 1&3&5\\\noalign{\medskip}1&3&2
+\end {array}\right.
+\hskip -2pt
+\left|
+\begin {array}{r} 
+2\\\noalign{\medskip}1
+\end {array}\right]
+\]
+
+After using Gauss-Jordan reduction it becomes:
+$\displaystyle{
+\left [\begin {array}{rrr} 1&3&0\\\noalign{\medskip}0&0&1
+\end {array}\right .
+\hskip -2pt
+\left|
+\begin {array}{r} 
+\frac{1}{3}\\\noalign{\medskip}\frac{1}{3}
+\end {array}\right]
+}$
+
+Here we see that $\mathrm{rank}\,{A} = \mathrm{rank}\,{A'} = 2$, hence
+the system has solution and the vector $\mathbf{b}$ does belong to the
+column space of the matrix $A$.
+
+
+}
+
+\clearpage
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\pnum{3} Solve the following system of equations:
+
+\[
+\left\{
+\begin{array}{rrrrrrr}
+x_{{1}}&+&2\,x_{{2}}&+&3\,x_{{3}}&=& 2 \\
+\medskip 
+x_{{1}}&+&x_{{2}}&+&x_{{3}}&=& 1 \\
+\medskip 
+&&x_{{2}}&+&2\,x_{{3}}&=& 1
+\end{array}
+\right.
+\]
+
+
+
+\solution{2.5in}{\par
+The augmented matrix is:
+$\displaystyle{
+\left [
+\begin{array}{rrr} 1&2&3\\\noalign{\medskip}1&1&1
+\\\noalign{\medskip}0&1&2
+\end{array}\right.
+\hskip -2pt
+\left|
+\begin{array}{r}
+2\\\noalign{\medskip}1\\\noalign{\medskip}1
+\end{array}
+\right]
+}$
+
+After using Gauss-Jordan reduction we get:
+$\displaystyle{
+\left [
+\begin{array}{rrrr} 
+1&\phantom{-}0&-1\\
+\noalign{\medskip}0&1&2\\
+\noalign{\medskip}0&0&0
+\end{array}\right.
+\hskip -2pt
+\left|
+\hskip 2pt
+\begin{array}{r}
+0\\\noalign{\medskip}1\\\noalign{\medskip}0
+\end{array}
+\right]
+}$
+
+i.e.:
+\[
+\left \{\begin {array}{rrrrrrr} x_1&&&-&x_3&=&0\\
+\noalign{\medskip}&&x_2&+&2\,x_3&=&1
+\end {array}\right .
+\]
+
+The solution is $x_1 = x_3$, $x_2 = 1-2\,x_3$, or:
+\[
+\left [\begin {array}{r} x_{{1}}\\\noalign{\medskip}x_{{2}}
+\\\noalign{\medskip}x_{{3}}\end {array}\right ]
+=
+\left [\begin {array}{c} 
+x_{{3}}\\\noalign{\medskip}1-2\,x_{{3}}\\\noalign{\medskip}x_{{3}}
+\end {array}\right ]
+=
+\left [\begin {array}{r} 0\\\noalign{\medskip}1\\\noalign{\medskip}0
+\end {array}\right ]+x_{{3}}\,
+\left [\begin {array}{r} 1\\\noalign{\medskip}-2\\\noalign{\medskip}1
+\end {array}\right ]
+\]
+
+}
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pnum{4} Find a basis and the dimension of the solution space 
+for the system:
+\[
+\left\{
+\begin {array}{rrrrrrrrrrr} 
+x_{{1}}&&&-&3\,x_{{3}}&+&x_{{4}}&-&x_{{5}}&=&0 \\
+\noalign{\medskip}&&x_{{2}}&-&x_{{3}}&+&3\,x_{{4}}&+&x_{{5}}&=&0
+\end {array}
+\right.
+\]
+
+\solution{2.5in}{\par
+The coefficient matrix is:
+\[
+A =
+\left [\begin{array}{rrrrr} 
+1&\phantom{-}0&-3&\phantom{-}1&-1\\\noalign{\medskip}
+0&1&-1&3&1
+\end{array}\right ]
+\]
+
+Note that $A$ is already in Gauss-Jordan reduced form.
+Hence, the general solution of $A\mathbf{x} =\mathbf{0}$ is:
+\[
+\begin{array}{rrrrrrr}
+x_1 & = & 3 x_3 & - & x_4 & + & x_5 \\
+x_2 & = & x_3 & - & 3 x_4 & - & x_5
+\end{array}
+\] 
+and in matrix form:
+$\displaystyle{
+\left [\begin {array}{r} x_{{1}}\\\noalign{\medskip}x_{{2}}
+\\\noalign{\medskip}x_{{3}}\\\noalign{\medskip}x_{{4}}
+\\\noalign{\medskip}x_{{5}}\end {array}\right ]=\ x_{{3}} \left [
+\begin {array}{r} 3\\\noalign{\medskip}1\\\noalign{\medskip}1
+\\\noalign{\medskip}0\\\noalign{\medskip}0\end {array}\right ]+\ x_{{4}}
+\left [\begin {array}{r} -1\\\noalign{\medskip}-3\\\noalign{\medskip}0
+\\\noalign{\medskip}1\\\noalign{\medskip}0\end {array}\right ]+\ x_{{5}}
+\left [\begin {array}{r} 1\\\noalign{\medskip}-1\\\noalign{\medskip}0
+\\\noalign{\medskip}0\\\noalign{\medskip}1\end {array}\right ]\,.
+}$
+
+Hence, the following set is a basis of the solution space:
+\[
+\left\{\quad
+\mathbf{v_1} = 
+\left [
+\begin {array}{r} 3\\\noalign{\medskip}1\\\noalign{\medskip}1
+\\\noalign{\medskip}0\\\noalign{\medskip}0\end {array}\right ];
+\quad
+\mathbf{v_2} = 
+\left [\begin {array}{r} -1\\\noalign{\medskip}-3\\\noalign{\medskip}0
+\\\noalign{\medskip}1\\\noalign{\medskip}0\end {array}\right ];
+\quad
+\mathbf{v_3} = 
+\left [\begin {array}{r} 1\\\noalign{\medskip}-1\\\noalign{\medskip}0
+\\\noalign{\medskip}0\\\noalign{\medskip}1\end {array}\right ]
+\quad\right\}
+\]
+and its dimension is 3.
+
+}
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pnum{5} 
+Find the inverse of the following matrix:
+$\displaystyle{
+A = 
+\left [\begin {array}{rrr} 1&2&2\\\noalign{\medskip}2&2&1
+\\\noalign{\medskip}1&1&1\end {array}\right ] .
+}$
+
+
+\solution{2.5in}{\par
+\[
+A^{-1} = 
+\left [\begin {array}{rrr} -1&0&2\\\noalign{\medskip}1&1&-3
+\\\noalign{\medskip}0&-1&2\end {array}\right ]
+\]
+}
+
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+\pnum{6} 
+Find the eigenvalues and eigenvectors of the following matrix:
+$\displaystyle{
+A =
+\left [\begin {array}{rrr} 3&4&4\\\noalign{\medskip}2&1&-2
+\\\noalign{\medskip}-4&-4&-1\end {array}\right ] .
+}$
+
+
+\solution{2.5in}{\par
+The characteristic polynomial of $A$ is
+\[
+\begin{aligned}
+\det\,(A-\lambda\,I) = 
+\det\left [\begin {array}{ccc} 3-\lambda&4&4\\
+\noalign{\medskip}2&1-\lambda&-2
+\\\noalign{\medskip}-4&-4&-1-\lambda\end {array}\right ] 
+&= -3+3\,{\lambda}^{2}+\lambda-{\lambda}^{3} \\
+&=
+-\left (\lambda-1\right )\left (\lambda-3\right )\left (\lambda+1
+\right )
+\end{aligned}
+\]
+
+Its roots are $\lambda=3$, $\lambda=1$ and $\lambda=-1$.
+
+For $\lambda=3$ we get
+$\displaystyle{
+A - 3\,I = 
+\left [\begin {array}{rrr} 0&4&4\\\noalign{\medskip}2&-2&-2
+\\\noalign{\medskip}-4&-4&-4\end {array}\right ]
+}$
+
+After using Gauss-Jordan the matrix becomes:
+$\displaystyle{
+\left [\begin {array}{ccc} 1&0&0\\\noalign{\medskip}0&1&1
+\\\noalign{\medskip}0&0&0\end {array}\right ]
+}$
+
+The solutions of $(A-3\,I)\,\mathbf{v} = 0$ 
+are:
+\[
+\mathbf{v} = 
+\left [\begin {array}{c} 0\\\noalign{\medskip}-x_{{3}}
+\\\noalign{\medskip}x_{{3}}\end {array}\right ]
+=
+x_3 \left [\begin {array}{r} 0\\\noalign{\medskip}-1\\\noalign{\medskip}1
+\end {array}\right ]
+\]
+
+So we can take the following eigenvector:
+$\displaystyle{
+\mathbf{v_1} = 
+\left [\begin {array}{r} 0\\\noalign{\medskip}-1\\\noalign{\medskip}1
+\end {array}\right ]
+}$
+
+
+
+For $\lambda=1$ we get
+$\displaystyle{
+A - I = 
+\left [\begin {array}{rrr} 2&4&4\\\noalign{\medskip}2&0&-2
+\\\noalign{\medskip}-4&-4&-2\end {array}\right ]
+}$
+
+After using Gauss-Jordan the matrix becomes:
+$\displaystyle{
+\left [\begin {array}{rrr} 1&0&-1\\\noalign{\medskip}0&1&\frac{3}{2}
+\\\noalign{\medskip}0&0&0\end {array}\right ]
+}$
+
+The solutions of $(A-I)\,\mathbf{v} = 0$ 
+are:
+\[
+\mathbf{v} = 
+\left [\begin {array}{c} x_{{3}}\\
+\noalign{\medskip}-\frac{3}{2}\,x_{{3}}
+\\\noalign{\medskip}x_{{3}}\end {array}\right ]
+=
+x_3
+\left [\begin {array}{r} 1\\\noalign{\medskip}-\frac{3}{2}
+\\\noalign{\medskip}1\end {array}\right ]
+\]
+
+So we can take the following eigenvector:
+$\displaystyle{
+\mathbf{v_2} = 
+\left [\begin {array}{r} 1\\\noalign{\medskip}-\frac{3}{2}
+\\\noalign{\medskip}1\end {array}\right ]
+}$
+
+
+For $\lambda=-1$ we get
+$\displaystyle{
+A + I = 
+\left [\begin {array}{rrr} 4&4&4\\\noalign{\medskip}2&2&-2
+\\\noalign{\medskip}-4&-4&0\end {array}\right ]
+}$
+
+After using Gauss-Jordan the matrix becomes:
+$\displaystyle{
+\left [\begin {array}{ccc} 1&1&0\\\noalign{\medskip}0&0&1
+\\\noalign{\medskip}0&0&0\end {array}\right ]
+}$
+
+The solutions of $(A+I)\,\mathbf{v} = 0$ 
+are:
+\[
+\mathbf{v} = 
+\left [\begin {array}{c} -x_{{2}}\\\noalign{\medskip}x_{{2}}
+\\\noalign{\medskip}0\end {array}\right ]
+=
+x_2 \left [\begin {array}{r} -1\\\noalign{\medskip}1
+\\\noalign{\medskip}0\end {array}\right ]
+\]
+
+So we can take the following eigenvector:
+$\displaystyle{
+\mathbf{v_3} = 
+\left [\begin {array}{r} -1\\\noalign{\medskip}1
+\\\noalign{\medskip}0\end {array}\right ]
+}$
+
+
+As a summary, we get the following set of eigenvalues with 
+their associated eigenvectors:
+\[
+\lambda_1 = 3,\quad
+\mathbf{v_1} = 
+\left [\begin {array}{r} 0\\\noalign{\medskip}-1\\\noalign{\medskip}1
+\end {array}\right ]
+;
+\quad
+\lambda_2 = 1,\quad
+\mathbf{v_2} = 
+\left [\begin {array}{r} 1\\\noalign{\medskip}-\frac{3}{2}
+\\\noalign{\medskip}1\end {array}\right ]
+;
+\quad
+\lambda_3 = -1,\quad
+\mathbf{v_3} = 
+\left [\begin {array}{r} -1\\\noalign{\medskip}1
+\\\noalign{\medskip}0\end {array}\right ]
+\]
+
+
+%\[
+%\left \{[-1,1,\left \{[-1,1,0]\right \}],[1,1,\left \{[1,-3/2,1]
+%\right \}],[3,1,\left \{[0,1,-1]\right \}]\right \}
+%\]
+
+}
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\end{document}
+
+
+
+
+
+

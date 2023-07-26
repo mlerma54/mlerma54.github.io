@@ -1,0 +1,211 @@
+
+\documentclass{article}
+\parskip 8pt
+%\usepackage{amsfonts}
+%\usepackage{latexsym}
+%\usepackage{graphpap}
+%\usepackage{epsfig}
+
+\begin{document}
+\setlength{\unitlength}{1mm}
+\pagestyle{myheadings}
+\markright{\bfseries M305G \#50470 - 
+Spring 1997 - Lerma - Practice Test 1 (answers)}
+\bigskip
+
+\centerline{SOLUTIONS}
+
+\bigskip
+
+
+\bigskip
+\noindent 1. Find $\displaystyle \frac {f(x+h)-f(x)} {h}$ 
+for the following functions:
+
+\noindent (a) $f(x) = 5-x^2$
+
+$\displaystyle 
+\frac {5-(x+h)^2-(5-x^2)} {h} = \frac {5-x^2-2xh-h^2-5+x^2} {h}
+= -2x-h
+$
+
+\bigskip
+
+\noindent (b) $f(x) = 5x+3$
+
+$\displaystyle 
+\frac {5(x+h)+3-(5x+3)} {h} = \frac {5x+5h+3-5x-3} {h} = 5
+$
+
+\bigskip
+
+\medskip
+
+\noindent 2. Find the domain and range of 
+$\displaystyle y = \sqrt{\frac {x+5}{1-x}}$
+
+\noindent (a) DOMAIN: We need $1-x\neq 0 \rightarrow x\neq 0$ and 
+$\frac {x+5} {1-x} \geq 0$. Study of signs: 
+
+\begin{center}
+\begin{tabular}{|l|c|c|c|}
+\hline
+&$(-\infty,-5)$ & $(-5,1)$ & $(1,\infty)$\\
+\hline
+$x+5$ & $-$ & $+$ & $+$\\
+\hline
+$1-x$ & $+$ & $+$ & $-$\\
+\hline
+$\frac {x+5} {1-x}$ & $-$ & $+$ & $-$\\
+\hline
+\end{tabular}
+\end{center}
+
+Hence $D = [-5,0)$
+
+\noindent (b) RANGE: $\displaystyle y = \sqrt{\frac {x+5}{1-x}}$; 
+$\displaystyle y^2 = \frac {x+5}{1-x} \quad (y\geq 0)$;
+$\displaystyle y^2 (1-x) = x+5 \quad (y\geq 0)$;
+$\displaystyle y^2 - xy^2 = x+5 \quad (y\geq 0)$;
+$\displaystyle y^2 - 5 = x (1+y^2) \quad (y\geq 0)$; 
+$\displaystyle x = \frac {y^2-5} {1+y^2} \quad (y\geq 0)$. 
+We need $\displaystyle 1+y^2 \geq 0$, but this is always true, 
+so there are no additional restritions to $y\geq 0$. 
+
+Hence $R = [0,\infty)$
+
+\medskip
+
+\noindent 3. Find the x- and y- intercepts for the following curves:
+
+\noindent (a) $\displaystyle y = (x-2)(3x+5)(x+2)$
+
+\noindent x-intercepts: $y=0$; $(x-2)(3x+5)(x+2)=0$; 
+$x = 2, -\frac 5 3, -2$. Hence:
+$$
+(2,0)\quad(-\frac 5 3,0)\quad(-2,0)
+$$
+
+\noindent y-intercepts: $x=0$; $y = (-2)(5)(2) = -20$. Hence:
+$$
+(0,-20)
+$$
+
+\noindent (b) $\displaystyle \frac {(x-1)^2}{4} + \frac {(y+1)^2}{9} = 1$
+
+x-intercepts: $y=0$; $\displaystyle \frac {(x-1)^2}{4} + \frac 1 9 = 1$;
+$x=1\pm \frac 4 3 \sqrt{2}$.
+$$
+(1 + \frac 4 3 \sqrt{2},0)\quad(1 - \frac 4 3 \sqrt{2},0)
+$$
+
+y-intercepts: $x=0$; $\frac 1 4 + \frac {(y+1)^2}{9} = 1$;
+$y = -1 \pm \frac 3 2 \sqrt{3}$.
+$$
+(0,-1 + \frac 3 2 \sqrt{3})\quad(0,-1 - \frac 3 2 \sqrt{3})
+$$
+
+\medskip
+
+\noindent 4. Given $\displaystyle f(x) = 9 x^2$ and 
+$\displaystyle (h,k)=(-\sqrt{2},3)$, write $\displaystyle y-k=f(x-h)$.
+
+$$
+y - 3 = 9 (x + \sqrt{2})^2
+$$
+
+\medskip
+
+\noindent 5. Fin de sum $f+g$, difference $f-g$, product $fg$ 
+and quotient $f/g$ of the functions 
+$\displaystyle f(x) = x^2$ and $\displaystyle g(x) = 5x-2$.
+
+  $\displaystyle (f+g)(x) = x^2 + 5x - 2$
+
+  $\displaystyle (f-g)(x) = x^2 - 5x + 2$
+
+  $\displaystyle (fg)(x) = 5x^3 - 2x^2$
+
+  $\displaystyle (f/g)(x) = \frac {x^2}{5x-2}$
+
+\medskip
+
+\noindent 6. Given the functions $\displaystyle f(x) = 3x-1$ and 
+$\displaystyle g(x) = 5-x^2$, find the compositions:
+
+\noindent (a) $\displaystyle g \circ f$
+
+  $\displaystyle (g \circ f)(x) = -9x^2+6x+4$
+
+\noindent (b) $\displaystyle f \circ g$
+
+  $\displaystyle (f \circ g)(x) = 14 - 3x^2$
+
+\medskip
+
+\noindent 7. Compute by sythetic division: 
+$\displaystyle \frac {3x^3+2x^2-12x-8} {x-2}$
+
+\begin{center}
+\begin{tabular}{rrrrr}
+$2:$ & $3$ & $\ 2$ & $-12$ & $-8$\\
+ & & $6$ & $16$ & $8$\\
+\hline
+ & $3$ & $8$ & $4$ & $0$
+\end{tabular}
+\end{center}
+
+REMAINDER = 0.
+
+QUOTIENT = $3x^2 +8x + 4$.
+
+\medskip
+
+\noindent 8. Use slopes to decide if the triangle with vertices 
+$\displaystyle A(12,-7)$, $\displaystyle B(4,3)$, 
+$\displaystyle C(-3,-2)$ is a right triangle.
+
+$\displaystyle AB = (-8,10)$; $m_1 = -\frac 5 4$.
+
+$\displaystyle BC = (-7,-5)$; $m_2 = \frac 5 7$.
+
+$\displaystyle CA = (15,-5)$; $m_3 = -\frac {-1} 3$.
+
+Note that none of $m_1 m_2$, $m_2 m_3$, $m_3 m_1$, is $-1$, 
+so the triangle is not a right triangle.
+
+\medskip
+
+\noindent 9. Find the maximum or minimun value for the following 
+quadratic function, and state if it is a maximum or a minimum: 
+$\displaystyle 2 x^2 +24 x + y = 178$
+
+\noindent $\displaystyle y = -2x^2 - 24x + 178$; 
+$\displaystyle y - 250 = -2(x+6)$. 
+
+\noindent The vertex is at $(-6,250)$, and it is a maximum because 
+the leading coefficient is negative, which implies that 
+the parabole is open down.
+
+\medskip
+
+\noindent 10. Graph the function $\displaystyle f(x) = x^3 - 6 x^2$
+
+(a) x-intercepts: $x^2(x-6)=0$; $x=0$ or $x=6$.
+
+(b) y-intercepts: $x=0$; $y=0$.
+
+(c) For large $x$ the function behaves as $x^3$.
+
+(d) Since the degree is 3, there are at most 2 turning points.
+
+(Graph not included).
+
+
+\end{document}
+
+
+
+
+
+

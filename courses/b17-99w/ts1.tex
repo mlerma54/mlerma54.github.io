@@ -1,0 +1,301 @@
+% To be compiled with LaTeX
+% Set ``showsol'' to true to show the solutions.
+
+\documentclass[12pt]{article}
+\usepackage{amsmath}
+\parskip 10pt
+%\usepackage{amsfonts}
+%\usepackage{latexsym}
+%\usepackage{graphpap}
+\usepackage{epsfig}
+
+\usepackage{ifthen}
+
+\newboolean{showsol}
+
+%\setboolean{showsol}{false}
+\setboolean{showsol}{true}
+
+\newcommand{\ts}{Midterm Exam No.\,1} % Which test is this one?
+
+
+\newcommand{\solution}[2]{\ifthenelse{\boolean{showsol}}%
+{\vskip10pt\noindent\emph{Solution:}\vskip10pt #2}{\vskip #1}}
+
+\newcommand{\pnum}[1]{\noindent {\hskip -18pt \bfseries #1.}}
+
+\makeatletter
+\def\ps@myhead{%
+    \let\@oddfoot\@empty\let\@evenfoot\@empty
+    \def\@evenhead{\hfil{\large\leftmark}\hfil}%
+    \def\@oddhead{\hfil{\large\rightmark}\hfil}%
+    \let\@mkboth\@gobbletwo
+    \let\sectionmark\@gobble
+    \let\subsectionmark\@gobble
+    \def\@oddfoot{\reset@font\hfil\thepage\hfil}
+    \let\@evenfoot\@oddfoot
+    }
+\makeatother
+
+
+\begin{document}
+%\setlength{\unitlength}{1mm}
+\thispagestyle{myhead}
+
+\ifthenelse{\boolean{showsol}}
+{
+\markright{\bfseries Math B17 
+- Winter 1999 - \ts{} (solutions)}
+}
+{
+\markright{\bfseries B17 
+- Winter 1999 - \ts{} }
+}
+
+
+
+%begin header
+\ifthenelse{\boolean{showsol}}
+{
+\centerline{\Large SOLUTIONS}
+}
+{
+\noindent \begin{minipage}[t]{3.5 in}
+\Large
+\begin{tabular}{|r|c|}\hline 
+{\bfseries  Last Name:}&{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\\ 
+\hline 
+{\bfseries First Name:}&{ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }\\ 
+\hline
+\end{tabular}
+\end{minipage}
+
+\bigskip
+
+%{\noindent \bfseries Show all your work. 
+%
+%\noindent No calculators allowed.}
+}%end header
+%
+\bigskip
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\pnum{1} Determine if the following infinite series converges 
+or diverges:
+
+$\displaystyle{\sum_{n=1}^\infty\,\frac{\ln{n}}{1+\ln{(n+7)}}}$
+
+\solution{2.5in}{\par
+Using l'H\^opital's rule we check that the $n$-th term does not 
+converge to zero:
+\[
+\lim_{n\to \infty}\,\frac{\ln{n}}{1+\ln{(n+7)}} =
+\lim_{x\to \infty}\,\frac{\ln{x}}{1+\ln{(x+7)}} =
+\lim_{x\to \infty}\,\frac {1/x}{1/(x+7)} = 
+\lim_{x\to \infty}\,\frac {x+7}{x} = 1
+\]
+
+Hence, by the $n$-th Term Test for Divergence, the series diverges.
+}
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\pnum{2} Use the integral test to determine if the 
+following series converges or diverges:
+
+$\displaystyle{\sum_{n=2}^\infty\,\frac{1}{n\,(\ln{n})^2}}$
+
+\solution{2.5in}{\par First, note that 
+$f(x) = \frac{1}{x\,(\ln{x})^2}$ 
+is continuous, positive and decreasing for
+$x\geq 2$. Next, we compute the following integral:
+\[
+\int_2^n\,\frac{1}{x\,(\ln{x})^2}\,dx = 
+\left[-\frac{1}{\ln{x}}\right]_{2}^n =
+\frac{1}{\ln{2}} - \frac{1}{\ln{n}}\ .
+\]
+So:
+\[
+\lim_{n\to \infty}\,\int_2^n\,\frac{1}{x\,(\ln{x})^2} = 
+\frac{1}{\ln{2}}\ .
+\]
+
+Since the integral converges, the series converges.
+}
+
+
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pnum{3} Let $S$ be the sum of the following series:
+
+$\displaystyle{S = \sum_{n=0}^\infty\,\frac{\cos^2{n}}{5^n}}$
+
+Determine which one of the following statements is true and 
+show why:
+
+\begin{enumerate}
+\item The series diverges.
+\item The series converges and $5/4 \leq S$.
+\item \label{L} The series converges and $0 < S < 5/4$.
+\end{enumerate}
+
+\solution{2.5in}{\par
+First note that $0 \leq \cos^2{n} \leq 1$, hence:
+\[
+0 \leq \frac{\cos^2{n}}{5^n} \leq \frac{1}{5^n}
+\]
+
+Since the following geometric series converges:
+\[
+\sum_{n=0}^\infty\,\frac{1}{5^n} = 
+\frac{1}{1-\frac{1}{5}} = \frac{5}{4}\ ,
+\]
+by Comparison Test the given series also converges, and its sum is 
+$S\leq 5/4$.  Note that the inequality is actually strict 
+($S < 5/4$), since, for instance, 
+$\frac{\cos^2{1}}{5} < 1/5$.  
+Hence statement \ref{L} is true.  }
+
+
+\clearpage
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\pnum{4} Find the interval of convergence of the following 
+power series:
+
+$\displaystyle{\sum_{n=1}^\infty\,\frac{(-1)^n}{n}\,(x-2)^n}$
+
+\solution{2.5in}{\par
+
+By the method at the beginning of section 11.8 of the textbook:
+\[
+\rho = 
+\lim_{n\to\infty}\,\frac{1/(n+1)}{1/n} =
+\lim_{n\to\infty}\,\frac{n}{n+1} = 1\ ,
+\]
+hence the radius of convergence is $R = 1/\rho = 1$, so the power
+series converges absolutely for $|x-2|<1$, i.e., $1 < x < 3$.
+
+Alternatively, using directly the Ratio Test, the series converges
+absolutely wherever the following limit is less than 1:
+\[
+\lim_{n\to\infty}\,\frac{|x-2|^{n+1}/(n+1)}{|x-2|^n/n} =
+\lim_{n\to\infty}\,\frac{n}{n+1}\,|x-2| = |x-2|\ ,
+\]
+hence the power series converges absolutely for $|x-2|<1$, i.e., 
+$1 < x < 3$.
+
+Next we test the endpoints. 
+
+For $x=1$ the series is
+\[
+\sum_{n=1}^\infty\,\frac{1}{n}\ ,
+\]
+which diverges.
+
+For $x=3$ the series becomes 
+\[
+\sum_{n=1}^\infty\,\frac{(-1)^n}{n}\ ,
+\]
+which converges.
+
+Hence its interval of convergence is $(1,3]$.
+}
+
+
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\pnum{5} Find the power series in $x$ of the function defined 
+by the following integral:
+
+$\displaystyle{f(x) = \int_0^x \frac{\sin{t}}{t}}\,dt =$
+
+\solution{2.5in}{\par
+The power series of $\sin t$ is:
+\[
+\sin{t} = \sum_{n=0}^\infty\,(-1)^n\,\frac{t^{2n+1}}{(2n+1)!}
+= t - \frac{t^3}{3!} + \frac{t^5}{5!} - \frac{t^7}{7!} + \cdots
+\]
+
+Dividing by $t$ we get:
+\[
+\frac{\sin{t}}{t} = \sum_{n=0}^\infty\,(-1)^n\,\frac{t^{2n}}{(2n+1)!}
+= 1 - \frac{t^2}{3!} + \frac{t^4}{5!} - \frac{t^6}{7!} + \cdots
+\]
+
+Integrating termwise we get:
+\[
+\int_0^x\,\frac{\sin{t}}{t}\,dt = 
+\sum_{n=0}^\infty\,(-1)^n\,\frac{x^{2n+1}}{(2n+1)!\,(2n+1)} = 
+x - \frac{x^3}{3!\,3} + \frac{x^5}{5!\,5} - \frac{x^7}{7!\,7} + \cdots
+\]
+}
+
+
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\pnum{6} Use power series to compute the following limit:
+
+$\displaystyle{\lim_{x\to 0}\,
+     \left(\,\frac{1}{x} - \frac{1}{\sin{x}}\,\right) =}$
+
+\solution{2.5in}{\par
+\[
+\begin{aligned}
+\lim_{x\to 0}\,
+     \left(\,\frac{1}{x} - \frac{1}{\sin{x}}\,\right) 
+&=
+\lim_{x\to 0}\,
+     \frac{\sin{x} - x}{x\,\sin{x}} \\
+&=
+\lim_{x\to 0}\,
+     \frac{(x-\frac{x^3}{3!} + \frac{x^5}{5!} -\cdots) - x}
+                 {x\,(x-\frac{x^3}{3!} + \frac{x^5}{5!} -\cdots)} \\
+&= 
+\lim_{x\to 0}\,
+     \frac{-\frac{x^3}{3!} + \frac{x^5}{5!} -\cdots}
+                 {x^2-\frac{x^4}{3!} + \frac{x^6}{5!} -\cdots} \\
+&=
+\lim_{x\to 0}\,
+     \frac{-\frac{x}{3!} + \frac{x^3}{5!} -\cdots}
+                 {1-\frac{x^2}{3!} + \frac{x^4}{5!} -\cdots} \\
+&= \frac{0}{1} = 0
+\end{aligned}
+\]
+}
+
+
+\clearpage
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\end{document}
+
+
+
+
+
+

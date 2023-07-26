@@ -1,0 +1,310 @@
+
+
+<center>
+
+
+<table border=2 cellpadding=5 cellspacing=2>
+
+<tr>
+<th>Lect.</th>
+<th>Date</th>
+<th>Subject</th>
+<th>Sections</th>
+<th>Suggested Exercises</th>
+<th>Homework<br>Assignments</th>
+</tr>
+
+<tr>
+<td align=right>1</td>
+<td align=right>Wed 1/5</td>
+<td><a href="notes/dm-logic-1.pdf">Logic</a></td>
+<td>2.1</td>
+<td>2.1: 1-6; 8-13</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>2</td>
+<td align=right>Fri 1/7</td>
+<td><a href="notes/dm-logic-2.pdf">Inference, Arguments</a></td>
+<td>2.2-2.3</td>
+<td>2.2; 1-15; 2.3: 1-10</td>
+<td> 
+                <a href="hwk/hwk-01.pdf">set 1</a> - due Fri 1/14</td>
+</tr>
+
+<tr>
+<td align=right>3</td>
+<td align=right>Mon 1/10</td>
+<td><a href="notes/dm-logic-3.pdf">Predicate Logic</a></td>
+<td>2.4-2.5</td>
+<td>
+           2.4: 8,9,11,12,18-22; 2.5: 7,8,12-16</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>4</td>
+<td align=right>Wed 1/12</td>
+<td><a href="notes/dm-sets-1.pdf">Sets</a></td>
+<td>3.1-3.2</td>
+<td>3.1: 1-7,10; 3.2: 1-8, 13,14,19</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>5</td>
+<td align=right>Fri 1/14</td>
+<td><a href="notes/dm-relac-1.pdf">Relations</a></td>
+<td>5.1,7.1</td>
+<td>5.1: 1,4,5,7,11; 7.1: 5-8</td>
+<td> 
+                <a href="hwk/hwk-02.pdf">set 2</a> - due Fri 1/21</td>
+</tr>
+
+<tr>
+<td align=right>6</td>
+<td align=right>Mon 1/17</td>
+<td><a href="notes/dm-relac-2.pdf">Partial Orders</a></td>
+<td>7.3</td>
+<td>7.3: 1-4,8,20-22</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>7</td>
+<td align=right>Wed 1/19</td>
+<td><a href="notes/dm-relac-3.pdf">Equivalence Relations</a></td>
+<td>7.4</td>
+<td>7.4: 1,6-8</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>8</td>
+<td align=right>Fri 1/21</td>
+<td><a href="notes/dm-func-1.pdf">Functions</a></td>
+<td>5.2-5.3,5.6</td>
+<td>5.2: 1,2,5-8,15,16; 
+                         5.3: 1-3; 5.6: 2-10,12-14,16-18</td>
+<td> 
+                <a href="hwk/hwk-03.pdf">set 3</a> - due Fri 1/28<br></td>
+</tr>
+
+<tr>
+<td align=right>9</td>
+<td align=right>Mon 1/24</td>
+<td>Functions (cont'ed)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>10</td>
+<td align=right>Wed 1/26</td>
+<td><a href="notes/dm-oper-1.pdf">Operations</a></td>
+<td>5.4,14.1</td>
+<td>5.4: 1-4,11; 14.1: 2,4-7</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>11</td>
+<td align=right>Fri 1/28</td>
+<td><a href="notes/dm-perm-1.pdf">Counting, Permutations</a></td>
+<td>1.1-1.2</td>
+<td>1.2: 1-27</td>
+<td> 
+                <a href="hwk/hwk-04.pdf">set 4</a> - due Fri 2/4</td>
+</tr>
+
+<tr>
+<td align=right>12</td>
+<td align=right>Mon 1/31</td>
+<td><a href="notes/dm-comb-1.pdf">Combinations</a></td>
+<td>1.3-1.4</td>
+<td>1.3: 1-23; 1.4: 1-13</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>13</td>
+<td align=right>Wed 2/2</td>
+<td><a href="notes/dm-coun-1.pdf">Other Counting Techniques</a></td>
+<td>3.3-3.4,8.1,5.5</td>
+<td>
+                             3.3-3.4: 1-12, 8.1: 1-9, 5.5: 1-13</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>14</td>
+<td align=right>Fri 2/4</td>
+<td><a href="notes/dm-induc-1.pdf">Mathematical Induction</a></td>
+<td>4.1-4.2</td>
+<td>4.1: 1-16, 4.2: 1-16</td>
+<td> 
+                <a href="hwk/hwk-05a.pdf">set 5a</a> - due Fri 2/18<br>
+                (this is the first part of problem set 5)</td>
+</tr>
+
+<tr>
+<td align=right>15</td>
+<td align=right>Mon 2/7</td>
+<td><a href="notes/cs310w00-sample-mid.pdf">Review for the Midterm<br></a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>Exam</td>
+<td align=right>Wed 2/9</td>
+<td align=center><strong><em><font color=green>MIDTERM EXAM</font></em></strong><br>
+                        <a href="exams/cs310w00-mid.pdf">Answers</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>16</td>
+<td align=right>Fri 2/11</td>
+<td><a href="notes/dm-rec-1.pdf">First Order Recurrence Relations</a></td>
+<td>10.1</td>
+<td>10.1: 2-6</td>
+<td> 
+                <a href="hwk/hwk-05.pdf">set 5</a> - due Fri 2/18</td>
+</tr>
+
+<tr>
+<td align=right>17</td>
+<td align=right>Mon 2/14</td>
+<td><a href="notes/dm-rec-2.pdf">Second Order Recurrence Relations</a></td>
+<td>10.2</td>
+<td>10.2: 1, 7-8, 11-17</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>18</td>
+<td align=right>Wed 2/16</td>
+<td><a href="notes/dm-div-1.pdf">Divisibility</a></td>
+<td>4.3-4.4</td>
+<td>4.3: 7-19, 4.4: 1-8</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>19</td>
+<td align=right>Fri 2/18</td>
+<td>Divisibility (cont'ed)</td>
+<td>4.5</td>
+<td>4.5: 1-3,7-9</td>
+<td> 
+                <a href="hwk/hwk-06.pdf">set 6</a> - due Fri 2/25</td>
+</tr>
+
+<tr>
+<td align=right>20</td>
+<td align=right>Mon 2/21</td>
+<td><a href="notes/dm-mod-1.pdf">Modular Arithmetic</a></td>
+<td>14.3</td>
+<td>14.3: 1-5,11,12,16,18</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>21</td>
+<td align=right>Wed 2/23</td>
+<td>Modular Arithmetic (cont'ed)</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>22</td>
+<td align=right>Fri 2/25</td>
+<td><a href="notes/dm-graph-1.pdf">Graphs</a></td>
+<td>11.1-11.2</td>
+<td>11.1: 1-6,10-13; 11.2: 1,9-13</td>
+<td> 
+                <a href="hwk/hwk-07.pdf">set 7</a> - due Fri 3/3</td>
+</tr>
+
+<tr>
+<td align=right>23</td>
+<td align=right>Mon 2/28</td>
+<td><a href="notes/dm-graph-2.pdf">Euler Trails and Circuits,<br>
+                 Hamilton Paths and Cycles</a></td>
+<td>11.3,11.5</td>
+<td>
+                      11.3: 1-3,5,18-20, 11.5: 1-5</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>24</td>
+<td align=right>Wed 3/1</td>
+<td><a href="notes/dm-graph-3.pdf">Planar Graphs, Trees</a></td>
+<td>11.4, 12.1</td>
+<td>
+                      11.4: 1-5,14; 12.1: 2-8</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>25</td>
+<td align=right>Fri 3/3</td>
+<td><a href="notes/dm-graph-4.pdf">Rooted Trees</a></td>
+<td>12.2</td>
+<td>12.2: 1-8</td>
+<td> 
+                <a href="hwk/hwk-08.pdf">set 8</a> - not due</td>
+</tr>
+
+<tr>
+<td align=right>26</td>
+<td align=right>Mon 3/6</td>
+<td><a href="notes/cs310w00-sample-final-1.pdf">Review for the Final Exam</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>27</td>
+<td align=right>Wed 3/8</td>
+<td><a href="notes/cs310w00-sample-final-2.pdf">Review for the Final Exam</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>28</td>
+<td align=right>Fri 3/10</td>
+<td><a href="notes/cs310w00-sample-final-3.pdf">Review for the Final Exam</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>Exam</td>
+<td align=right>Tue 3/14</td>
+<td align=center><strong><em><font color=green>FINAL EXAM</font></em></strong><br>
+                        <a href="exams/cs310w00-final.pdf">Answers</a></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+
+
+</table>
+
+</center>
+
+

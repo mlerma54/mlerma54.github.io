@@ -1,0 +1,18 @@
+List of permisions:
+
+drwxr-xr-x   2 mlerma   wheel         512 Jun  8 16:44 exams/
+-rw-r-----   1 65534    wheel        1655 Jun  7 22:16 feedback.dat
+-rw-r--r--   1 mlerma   wheel        1726 Mar 15 15:37 feedback.html
+-rw-r--r--   1 mlerma   wheel        5811 Jun  9 12:26 gr.html
+-rw-r--r--   1 mlerma   wheel        5811 Jun  9 12:27 grades.html
+drwxr-xr-x   2 mlerma   wheel         512 May 18 10:58 hwk/
+-rw-r--r--   1 mlerma   wheel         141 Apr 27 19:28 index
+-rwxr-xr-x   1 mlerma   wheel         740 Mar 15 15:17 index-lastmod.cgi*
+-rw-r--r--   1 mlerma   wheel         451 Apr 27 19:28 index.cache
+-rw-rw-rw-   1 mlerma   wheel           5 Jun 13 08:29 index.cnt
+-rw-r--r--   1 mlerma   wheel        8993 May 30 10:10 index.html
+drwxr-xr-x   2 mlerma   wheel        1536 May 22 09:32 notes/
+-rw-r--r--   1 mlerma   wheel        1008 May 30 10:09 prevexams.html
+-rwxr-xr-x   1 mlerma   wheel        1299 Mar 15 15:37 sendm.cgi*
+-rw-r--r--   1 mlerma   wheel        6366 Jun  8 16:44 syllabus
+

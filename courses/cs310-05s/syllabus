@@ -1,0 +1,482 @@
+
+
+<center>
+
+
+<table border=2 cellpadding=5 cellspacing=2>
+
+<tr>
+<th>Lect.</th>
+<th>Date</th>
+<th>Subject</th>
+<th>Sections</th>
+<th>Suggested Exercises</th>
+<th>Homework<br>Assignments</th>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan=2><strong>Logic, Proofs</strong></td>
+</tr>
+
+<tr>
+<td align=right>1</td>
+<td align=right>*Tue 3/29</td>
+<td><a href="notes/dm-logic.pdf">Propositions</a></td>
+<td align=center>1.1-1.2</td>
+<td>
+ <b>1.1</b>: 1,4,7,10,12,21,24,30,32;<br>
+ <b>1.2</b>: 6,7,9,13-16</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>2</td>
+<td align=right>Wed 3/30</td>
+<td><a href="notes/dm-predic.pdf">Predicates, Quantifiers</a></td>
+<td align=center>1.3-1.4</td>
+<td>
+ <b>1.3</b>: 1-2,5,9,11,12-14,33;<br>
+ <b>1.4</b>: 1,11,26-28</td>
+<td> 
+  <a href="hwk/hwk-01.pdf">set 1</a> - Due Wed 4/6/2005</td>
+</tr>
+
+<tr>
+<td align=right>3</td>
+<td align=right>Fri 4/1</td>
+<td><a href="notes/dm-proofs.pdf">Proofs</a></td>
+<td align=center>1.5</td>
+<td>
+ <b>1.5</b>: 1,3,5,13-14,21-22,48-52</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan=2><strong>Sets, Functions, Relations</strong></td>
+</tr>
+
+<tr>
+<td align=right>4</td>
+<td align=right>Mon 4/4</td>
+<td><a href="notes/dm-sets.pdf">Sets</a></td>
+<td align=center>1.6-1.7</td>
+<td>
+ <b>1.6</b>: 1-6,13,19,24,27;<br>
+ <b>1.7</b>: 3-4,14,19,24,33,37-38</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>Probl.</td>
+<td align=right>Tue 4/5</td>
+<td></td>
+<td align=center></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>5</td>
+<td align=right>Wed 4/6</td>
+<td><a href="notes/dm-func.pdf">Functions</a></td>
+<td align=center>1.8</td>
+<td>
+ <b>1.8</b>: 1-2,4,10-15,19,22-24,31</td>
+<td> 
+  <a href="hwk/hwk-02.pdf">set 2</a> - Due Wed 4/13/2005</td>
+</tr>
+
+<tr>
+<td align=right>6</td>
+<td align=right>Fri 4/8</td>
+<td><a href="notes/dm-relac.pdf">Relations</a></td>
+<td align=center>7.1,7.3,7.5-7.6</td>
+<td>
+ <b>7,1</b>: 1,34,6-7; 7.3: 1,13-15;<br>
+ <b>7.5</b>: 1-3,29-30,43;<br>
+ <b>7.6</b>: 1-5,8-9,16-17,27-29</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan=2><strong>Algorithms, Integers</strong></td>
+</tr>
+
+<tr>
+<td align=right>7</td>
+<td align=right>Mon 4/11</td>
+<td><a href="notes/dm-algor">Algorithms, Complexity, Recursiveness</a></td>
+<td align=center>2.1-2.3,3.4-3.5</td>
+<td>
+ <b>2.1</b>: 3-4,11-12, 16, 27;<br>
+ <b>2.2</b>: 1-4,20,21-23;<br>
+ <b>2.3</b>: 1-2,4,7-8,13-15;<br>
+ <b>3.4</b>: 1-2,5-8; 3.5: 1-4,16-17</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>Probl.</td>
+<td align=right>Tue 4/12</td>
+<td></td>
+<td align=center></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>8</td>
+<td align=right>Wed 4/13</td>
+<td><a href="notes/dm-euclid">Division, Euclidean Algorithm</a></td>
+<td align=center>2.4-2.6</td>
+<td>
+ <b>2.4</b>: 11-16,28-31;<br>
+ <b>2.5</b>: 21-24, <b>2.6</b>: 1-2</td>
+<td> 
+  <a href="hwk/hwk-03.pdf">set 3</a> - Due Wed 4/20/2005</td>
+</tr>
+
+<tr>
+<td align=right>9</td>
+<td align=right>Fri 4/15</td>
+<td><a href="notes/dm-modular">Modular Arithmetic,<br>The RSA Public-Key Cryptosystem</a></td>
+<td align=center>2.4-2.6</td>
+<td>
+ <b>2.4</b>: 25;<br>
+ <b>2.6</b>: 3-6,11-12,18-19,46-49,59-60</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan=2><strong>Induction, Recursion</strong></td>
+</tr>
+
+<tr>
+<td align=right>10</td>
+<td align=right>Mon 4/18</td>
+<td><a href="notes/dm-seq">Sequences, Strings</a></td>
+<td align=center>3.2</td>
+<td>
+ <b>3.2</b>: 1-4,9-10,13-18,27-28</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>Probl.</td>
+<td align=right>Tue 4/19</td>
+<td></td>
+<td align=center></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>11</td>
+<td align=right>Wed 4/20</td>
+<td><a href="notes/dm-induc">Mathematical Induction</a></td>
+<td align=center>3.3</td>
+<td>
+ <b>3.3</b>: 3-4,12-14,18-19,31-32</td>
+<td>                                         
+  <a href="hwk/hwk-04.pdf">set 4</a> - Due Wed 4/27/2005</td>
+</tr>
+
+<tr>
+<td align=right>12</td>
+<td align=right>Fri 4/22</td>
+<td><a href="notes/dm-recur">Recurrence Relations</a></td>
+<td align=center>6.1-6.2</td>
+<td>
+ <b>6.1</b>: 1-4,10-11,42-44;<br>
+ <b>6.2</b>: 1-4,11-15</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan=2><strong>Counting</strong></td>
+</tr>
+
+<tr>
+<td align=right>13</td>
+<td align=right>Mon 4/25</td>
+<td><a href="notes/dm-comb">Combinatorics</a></td>
+<td align=center>4.1,4.3</td>
+<td>
+ <b>4.1</b>: 1-6,19-20; <b>4.3</b>: 1-8,21-24</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>Probl.</td>
+<td align=right>Tue 4/26</td>
+<td></td>
+<td align=center></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>14</td>
+<td align=right>Wed 4/27</td>
+<td><a href="notes/dm-gcomb">More Combinatorics</a></td>
+<td align=center>4.2,4.4-4.5</td>
+<td>
+ <b>4.2</b>: 1-4; <b>4.4</b>: 1-9,33;<br>
+ <b>4.5</b>: 1-6,14-16,20</td>
+<td> 
+  (No homework due to the proximity of the Midterm)</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan=2><strong>Graph Theory</strong></td>
+</tr>
+
+<tr>
+<td align=right>15</td>
+<td align=right>Fri 4/29</td>
+<td><a href="notes/dm-graphs">Graphs</a></td>
+<td align=center>8.1-8.2</td>
+<td>
+ <b>8.1</b>: 3-9; <b>8.2</b>: 1-3,19-23</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>16</td>
+<td align=right>Mon 5/2</td>
+<td><a href="notes/dm-graphs2">Representations of Graphs</a></td>
+<td align=center>8.3</td>
+<td>
+ <b>8.3</b>: 1-4,10-12,34-44,61-64</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>Probl.</td>
+<td align=right>Tue 5/3</td>
+<td></td>
+<td align=center></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>Exam</td>
+<td align=right>Wed 5/4</td>
+<td align=center><b><em><font color=green>MIDTERM EXAM</font></em></b><br>
+       <a href="exams/cs310s05-mid.pdf">Answers</a></td>
+<td align=center>up to 5.3</td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>17</td>
+<td align=right>Fri 5/6</td>
+<td><a href="notes/dm-paths">Paths and Circuits</a></td>
+<td align=center>8.4-8.6</td>
+<td>
+ <b>8.4</b>: 1-6,12-13;<br>
+ <b>8.5</b>: 1-8, 30-43; <b>8.6</b>: 1-5</td>
+<td> 
+  <a href="hwk/hwk-05.pdf">set 5</a> - Due Wed 5/11/2005</td>
+</tr>
+
+<tr>
+<td align=right>18</td>
+<td align=right>Mon 5/9</td>
+<td><a href="notes/dm-planar">Planar Graphs</a></td>
+<td align=center>8.7-8.8</td>
+<td>
+ <b>8.7</b>: 1-9,20-25; <b>8.8</b>: 1-12</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>Probl.</td>
+<td align=right>Tue 5/10</td>
+<td></td>
+<td align=center></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan=2><strong>Trees</strong></td>
+</tr>
+
+<tr>
+<td align=right>19</td>
+<td align=right>Wed 5/11</td>
+<td><a href="notes/dm-trees">Trees</a></td>
+<td align=center>9.1</td>
+<td>
+ <b>9.1</b>: 1-2, 11-12</td>
+<td>                                    
+  <a href="hwk/hwk-06.pdf">set 6</a> - Due Wed 5/18/2005</td>
+</tr>
+
+<tr>
+<td align=right>20</td>
+<td align=right>Fri 5/13</td>
+<td><a href="notes/dm-bintree">Binary Trees, Decision Trees</a></td>
+<td align=center>9.2</td>
+<td>
+ <b>9.2</b>: 1-6, 23-24, 37</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>21</td>
+<td align=right>Mon 5/16</td>
+<td><a href="notes/dm-treetran">Tree Transversals</a></td>
+<td align=center>9.3</td>
+<td>
+ <b>9.3</b>: 7-19</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>Probl.</td>
+<td align=right>Tue 5/17</td>
+<td></td>
+<td align=center></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>22</td>
+<td align=right>Wed 5/18</td>
+<td><a href="notes/dm-spantree">Spanning Trees</a></td>
+<td align=center>9.4-9.5</td>
+<td>
+ <b>9.4</b>: 2-6, 13-16; <b>9.5</b>: 1-8</td>
+<td> 
+  <a href="hwk/hwk-07.pdf">set 7</a> - Due Wed 5/25/2005</td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan=2><strong>Boolean Algebras</strong></td>
+</tr>
+
+<tr>
+<td align=right>23</td>
+<td align=right>Fri 5/20</td>
+<td><a href="notes/dm-boolalg">Boolean Algebras</a></td>
+<td align=center>10.1-10.3</td>
+<td>
+ <b>10.1</b>: 1-4,10-11,22-25; <b>10.2</b>: 1-4; <b>10.3</b>: 1-6</td>
+<td></td>
+</tr>
+
+<tr>
+<td></td>
+<td></td>
+<td colspan=2><strong>Automata, Grammars and Languages</strong></td>
+</tr>
+
+<tr>
+<td align=right>24</td>
+<td align=right>Mon 5/23</td>
+<td><a href="notes/dm-fsmach">Finite-State Machines</a></td>
+<td align=center>11.2</td>
+<td>
+ <b>11.2</b>: 1-4,7-8</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>Probl.</td>
+<td align=right>Tue 5/24</td>
+<td></td>
+<td align=center></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>25</td>
+<td align=right>Wed 5/25</td>
+<td><a href="notes/dm-grammar">Languages and Grammars</a></td>
+<td align=center>11.1</td>
+<td>
+ <b>11.1</b>: 1-8</td>
+<td> 
+ <a href="hwk/hwk-08.pdf">set 8</a> - Not Due</td>
+</tr>
+
+<tr>
+<td align=right>26</td>
+<td align=right>Fri 5/27</td>
+<td><a href="notes/dm-regular">Language Recognition</a></td>
+<td align=center>11.3-11.4</td>
+<td>
+ <b>11.3</b>: 10-21; <b>11.4</b>: 3-4,6-11</td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>Probl.</td>
+<td align=right>Tue 5/31</td>
+<td></td>
+<td align=center></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>27</td>
+<td align=right>Wed 6/1</td>
+<td>Review for the Final Exam</td>
+<td align=center></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>28</td>
+<td align=right>Fri 6/3</td>
+<td>Review for the Final Exam</td>
+<td align=center></td>
+<td></td>
+<td></td>
+</tr>
+
+<tr>
+<td align=right>Exam</td>
+<td align=right>Fri 6/10</td>
+<td align=center><b><em><font color=green>FINAL EXAM</font></em></b><br>
+       <a href="exams/cs310s05-final.pdf">Answers</a></td>
+<td align=center>all</td>
+<td></td>
+<td></td>
+</tr>
+
+
+</table>
+
+</center>
+
+<p>
+
+(Last Modified: June 10, 2005)
+
+<p>
+

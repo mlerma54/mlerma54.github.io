@@ -1,0 +1,5 @@
+serveall=true
+
+file=event_const.pdf&content=application/pdf&title=File event_const.pdf
+file=josephus.pdf&content=application/pdf&title=File josephus.pdf
+file=binary_op.pdf&content=application/pdf&title=File binary_op.pdf

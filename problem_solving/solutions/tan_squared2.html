@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sums and products of tangents squared (MathJax version)</title>
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Config({tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}});
+</script>
+<!-- script type="text/javascript"
+  src="/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script -->
+<script type="text/javascript"
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+  </script>
+
+</head>
+<body style="font-family:arial; width:800px; padding:25px">
+
+<h2>Sums and products of tangents squared</h2>
+Find the values of the following expressions ($n\geq 3$ odd):
+\[
+\begin{aligned}
+S(n) &amp;=
+ \sum_{k=0}^{\frac{n-3}{2}}\tan^2\left\{\tfrac{(2k+1)\pi}{2n}\right\}\,, \\ 
+P(n) &amp;=
+ \prod_{k=0}^{\frac{n-3}{2}}\tan^2\left\{\tfrac{(2k+1)\pi}{2n}\right\}\,, \\
+\frac{S(n)}{P(n)} &amp;= 
+ \sum_{k=0}^{\tfrac{n-3}{2}}\,
+ \prod_{\substack{l=0 \\ l\ne k}}^{\tfrac{n-3}{2}}
+ \cot^2\left\{\tfrac{(2l+1)\pi}{2n}\right\}\,.
+\end{aligned}
+\]
+Generalize the result to certain sums of products of tangents or
+cotangents squared.
+
+<p>&nbsp;</p>
+
+<h3>Solution</h3>
+The problem can be solved by looking at the
+coefficients of the following polynomial (for the second equality use
+$x^2-\cot^2{\alpha} = (x+\cot{\alpha})(x-\cot{\alpha})$ and recall
+that  $\cot(\pi-\alpha) = -\cot(\alpha)$):
+\[
+p_n(x) = x\prod_{k=0}^{\frac{n-3}{2}}\left(x^2 - 
+\cot^2\left\{\tfrac{(2k+1)\pi}{2n}\right\}\right) =
+\prod_{k=0}^{n-1}\left(x - \cot\left\{\tfrac{(2k+1)\pi}{2n}\right\}\right)\,.
+\]
+Expanding the product we see that, except for the sign, $1/P(n)$ is
+the coefficient of $x$ in $p_n(x)$, and $S(n)/P(n)$ is the coefficient
+of $x^3$.  The other coefficients yield various expressions involving
+cotangents.  So the problem amounts to finding coefficients of
+$p_n(x)$.  To that end we prove that $p_n(x)$ can be rewritten in the
+following way:
+\[
+p_n(x) = \Re\{(x+i)^n\} \,,
+\]
+where $\Re(z)=$ real part of $z$ (applied to a polynomial we mean the
+polynomial obtained by replacing the coefficients by their real parts;
+note that if $p$ is a polynomial with complex coefficients and $a$ is
+a real number then $\Re\{p\}(a)=\Re\{p(a)\}$).  We note that the two
+polynomials we are comparing have the same degree and same leading
+coefficient, so we only need to show that they have exactly the same
+roots, i.e., they are zero for exactly the same values of $x$.  The
+roots of $p_n(x)$ are $x_k=\cot\left\{\frac{(2k+1)\pi}{2n}\right\}$,
+so we must prove that $\Re\{(x_k+i)^n\}=0$, or equivalently
+$(x_k+i)^n$ is purely imaginary for $k=0,\dots, n-1$.  In fact,
+putting $\alpha_k = \frac{(2k+1)\pi}{2n}$ we get:
+\[
+\cot{\alpha_k}+i = 
+\frac{\cos{\alpha_k} + i \sin{\alpha_k}}{\sin{\alpha_k}}
+=
+\left\{\sin{\alpha_k}\right\}^{-1} e^{\alpha_k i} \,,
+\]
+so $\arg(\cot{\alpha_k}+i)=\alpha_k$, and
+$\arg(\{\cot{\alpha_k}+i\}^n)=n\alpha_k = (k+1/2)\pi$, which is the
+argument of a purely imaginary number.
+
+So now we can expand $(x+i)^n$ using the binomial theorem and find its
+real part:
+\[
+\Re\{(x_k+i)^n\} = 
+\sum_{l=0}^{\frac{n-1}{2}} (-1)^l \binom{n}{2l} x^{n-2l} \,.
+\]
+Finally, comparing coefficients we get:
+\[
+\begin{aligned}
+\frac{1}{P(n)} &amp;= \binom{n}{n-1} = n  \,, \\
+\frac{S(n)}{P(n)} &amp;= \binom{n}{n-3} = \frac{n(n-1)(n-2)}{6}  \,, \\
+P(n) &amp;= \frac{1}{n}  \,, \\
+S(n) &amp;= \frac{(n-1)(n-2)}{6}  \,,
+\end{aligned}
+\]
+and much more:
+\[
+\begin{aligned}
+\sum_{k=0}^{\frac{n-3}{2}}
+\cot^2\left\{\tfrac{(2k+1)\pi}{2n}\right\}
+&amp;= \binom{n}{2} = \frac{n(n-1)}{2} \,, \\
+\cot^2\left(\tfrac{\pi}{14}\right)\cot^2\left(\tfrac{3\pi}{14}\right) 
+&amp;+
+\cot^2\left(\tfrac{\pi}{14}\right)\cot^2\left(\tfrac{5\pi}{14}\right) 
++ 
+\cot^2\left(\tfrac{3\pi}{14}\right)\cot^2\left(\tfrac{5\pi}{14}\right) 
+= \binom{7}{4} = 35 \,,
+\end{aligned}
+\]
+
+etc., etc., etc.
+
+<p>
+
+Miguel A. Lerma - 4/10/2003
+
+
+</body>
+</html>

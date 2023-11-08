@@ -1,7 +1,7 @@
 User-agent: *
-Disallow: /papers/
-Disallow: /IMVIP22/
+Disallow: /papers
+Disallow: /IMVIP22
 Allow: /index.html
-Allow: /papers-and-preprints/
-Allow: /problem_solving/
-Allow: /courses/
+Allow: /papers-and-preprints
+Allow: /problem_solving
+Allow: /courses

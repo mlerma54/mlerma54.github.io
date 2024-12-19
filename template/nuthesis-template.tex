@@ -1,0 +1,238 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% nuthesis-template.tex - Miguel A, Lerma - 4/23/2018
+%                         mlerma@math.northwestern.edu
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%%%%%%%%%%%%%%%%%%%%%%% DISCLAIMER %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% In spite of the effort to accommodate this template and the nuthesis
+% class to the official requirements of the university to write a 
+% Ph.D. dissertation, it is not possible to guarantee that it will 
+% always work, and the author of the dissertation remains responsible
+% for checking that such requirements are actually fulfilled by 
+% his/her final work.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[12pt]{nuthesis}	% The nuthesis class is based on 
+				% amsbook.cls.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% DATA OF AUTHOR AND DISSERTATION %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\author{Name of Author}
+
+\title{Title of the Dissertation}
+
+%\degree{DOCTOR OF PHILOSOPHY}  % Default: DOCTOR OF PHILOSOPHY
+
+%\field{Mathematics}            % Default: Mathematics
+
+%\graduationmonth{June}         % The default is June or December
+                                % depending on current date.
+
+%\graduationyear{2003}          % Default: current year.
+
+
+				% Use \includeonly to select the 
+%\includeonly{chap1,chap2,...}	% chapters to include if you are 
+				% using the \include command below.
+				% This way you can latex only a the 
+				% part you are working on, which 
+				% is faster than latexing the entire 
+				% thesis. 
+
+
+\begin{document}
+%	
+%	THE BODY OF YOUR THESIS STARTS HERE
+%
+
+%%%%%%%%%%%%%%%%%%%%%%
+% Some initial stuff %
+%%%%%%%%%%%%%%%%%%%%%%
+
+\frontmatter		% Preliminary pages start here.
+
+\maketitle		% Produces the title page.
+
+\copyrightpage		% Creates the copyright page.
+
+
+\abstract		% Abstract.
+
+This is the abstract.
+
+\acknowledgements	% Acknowledgements (optional).
+
+Text for acknowledgments.
+
+\preface		% Preface (optional).
+
+This is the preface.
+
+
+%% A few more optional pages (uncomment if needed)
+%
+%\listofabbreviations 
+%
+%This is the list of abbreviations (optional).
+%
+%\glossary
+%
+%This is the glossary (optional).
+%
+%\nomenclature
+%
+%This is the nomenclature (optional).
+%
+%% Note that the dedication text must be passed as an argument
+%% of the \dedication command
+%\dedication{This is the dedication (optional).}
+%
+
+\clearpage\phantomsection % needed for the hyperlinks to work correctly
+\tableofcontents	% Table of Contents will be automatically
+			% generated and placed here.
+
+\clearpage\phantomsection % needed for the hyperlinks to work correctly
+\listoftables		% List of Tables and List of Figures will be placed
+
+\clearpage\phantomsection % needed for the hyperlinks to work correctly
+\listoffigures		% here, if applicable (optional).
+
+
+
+\mainmatter             % Actual text starts here.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Actual text starts here %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% If there is an introduction it must be the first chapter
+
+\chapter{Introduction or Title of First Chapter}	% The first chapter.
+				% \chapter command is of the form
+				% \chapter[..]{..} or \chapter{..} where
+	... text ...		% {chapter heading} and [entry in table of
+				% contents].
+\section{First section of chapter 1}
+				% IMPORTANT: If your chapter heading consists
+				% of more than one lines, it will be auto-
+	... text ...		% matically broken into separate lines.
+				% However, if you don't like the way LaTeX
+				% breaks the chapter heading into lines, use
+\section{Another section}	% `\newheadline' command to break lines.
+				% Never use \\ in sectional (e.g., chapter,
+	... text ...		% section, subsection) headings.
+
+\chapter{Title of Second Chapter}	% Chapter 2.
+
+	... text ...
+
+\section{First section of chapter 2}
+
+	... text...
+
+\subsection{A subsection}
+
+	... more text ...
+
+\subsubsection{A subsubsection}
+
+	... more text ...
+
+
+% Alternatively, you may write the chapters in separate
+% files, say chap1.tex, chap2.tex, etc., and include them 
+% with commands:
+
+%\include{chap1}
+
+%\include{chap2}
+
+% The command \includeonly above allows to include a selected 
+% set of chapters only.
+
+% Uncomment the 'singlespace' environment and '\bibsep' command
+% if needed - some bibliographic styles overide the definition
+% of 'thebibliography' in nuthesis.cls
+%
+\begin{singlespace}
+%\bibsep 12pt
+\clearpage\phantomsection % needed for hyperlikns to work correctly
+\begin{thebibliography}{xxx}
+
+\bibitem{label1} A bibliographic item.  A bibliographic item.  A
+bibliographic item.  A bibliographic item.
+\bibitem{label2} Another bibliographic item.  
+\bibitem{label3} Yet another bibliographic item.  
+% The usages of \bibitem and \cite{..} are 
+% explained in Section 4.3 (page 73) of % LaTeX manual.
+% Or you may use BibTeX.
+\end{thebibliography}
+\end{singlespace}
+
+% (The following suggested by Francisco Iacobelli - 5/11/2010)
+% In case, you want to use BibTeX, you should replace (or comment)
+% the bibliography environment.
+% Instead uncomment the following lines and replace <bib file>
+% with your .bib file:
+% \begin{singlespace}
+% \bibsep 12pt
+% \bibliographystyle{acm} %or another suitable style.
+% \bibliography{<bib file>}
+% \end{singlespace}
+
+
+\appendix		% Appendix begins here (optional).
+
+
+\chapter{Title of First Appendix} 	% First appendix chapter, i.e., Appendix A.
+
+Here goes the first appendix.
+
+
+\section{First section of Appendix}	% This is appendix section 1.
+
+This is the Appendix.
+
+\subsection{First subsection of Appendix}  % This is appendix subsection 1.
+
+More text ...
+
+\subsubsection{First subsubsection of Appendix}  % This is subsubsection 1.
+
+Yet more text ...
+
+\chapter{Title of Second Appendix}
+
+In case there is more than one appendix.
+
+
+\begin{vita}                    % Vita (optional).
+
+This is the Vita. This is the Vita. This is the Vita. This is the Vita. 
+This is the Vita. This is the Vita. This is the Vita. This is the Vita. 
+This is the Vita. This is the Vita. This is the Vita. This is the Vita. 
+This is the Vita. This is the Vita. This is the Vita. This is the Vita. 
+
+This is the Vita. This is the Vita. This is the Vita. This is the Vita. 
+This is the Vita. This is the Vita. This is the Vita. This is the Vita. 
+This is the Vita. This is the Vita. This is the Vita. This is the Vita. 
+This is the Vita. This is the Vita. This is the Vita. This is the Vita. 
+
+This is the Vita. This is the Vita. This is the Vita. This is the Vita. 
+This is the Vita. This is the Vita. This is the Vita. This is the Vita. 
+This is the Vita. This is the Vita. This is the Vita. This is the Vita. 
+This is the Vita. This is the Vita. This is the Vita. This is the Vita. 
+
+
+\end{vita}
+
+
+\end{document}
+
